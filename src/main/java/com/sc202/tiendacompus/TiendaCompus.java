@@ -35,7 +35,7 @@ public class TiendaCompus {
                        String tipo = JOptionPane.showInputDialog("lo bucas inalambrico o alambrico");
                         if(tipo == "inalambrico"){
                             JOptionPane.showMessageDialog(null, "Todos lo mouse inalambrico valen 9000 colones");
-                            int precio = 90000;
+                            int precio = 9000;
                         } else if(tipo == "alambrico"){
                             JOptionPane.showMessageDialog(null, "Nuestros mouse alambricos tienen un costo de 5000 colones");
                             int precio = 5000;
