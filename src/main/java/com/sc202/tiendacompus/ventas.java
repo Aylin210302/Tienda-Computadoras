@@ -54,6 +54,7 @@ public void compras(){
                                   String memoria1 = "32GB";
                                   int precio1 = 1101750;
                                   JOptionPane.showMessageDialog(null, modelo1 + memoria1 + precio1);
+                                  
                                   break;
                                 case "b":
                                   String modelo2 = "Lenovo";
@@ -110,12 +111,49 @@ public void compras(){
                     }//fin del switch accesorio
                     break;
                 case "c":
-                   String armala = JOptionPane.showInputDialog("Tenemos algunas partes de computadora disponibles: " + "a. Motherboard" + "b. RAM" + "c. CPU" + "d. GPU" );
+                   String armala = JOptionPane.showInputDialog("¿Que tipo andas buscando? " + " a. Uso domestico " + " b. Gama Media " + " c. Gama alta" );
                 switch(armala){
                     case "a":
+                        String monitor1 = "Acer 21.5";
+                        int preMon1 = 80000;
+                        String almacenamiento1 = "SSD de 128GB";
+                        int preAlm1 = 20000;
+                        String procesador1 = "Intel pentium";
+                        int prePro1 = 40000;
+                        String RAM1 = "SODIMM de 4GB";
+                        int preRAM1 = 28476;
+                        int total1 = (preMon1 + preAlm1 + preRAM1);
+                        JOptionPane.showMessageDialog(null,"En el primer caso tendria un total de: " +  total1);
+                        break;
+                    case "b":
+                        String procesador2 = "Intel core i3 8TH GEN";
+                        int prePro2 = 55000;
+                        String RAM2 = "SODIMM DE 8GB";
+                        int preRAM2 = 33000;
+                        String almacenamiento2 = "SSD de 240GB";
+                        int preAlm2 = 40000;
+                        String discoduro2 = "500GB";
+                        int preDisc2 = 39500;
+                        int total2 = prePro2 + preRAM2 + preAlm2 + preDisc2;
+                        JOptionPane.showMessageDialog(null, "Esta opcion tiene un costo de: " + total2);
+                        break;
+                    case "c":
+                        String procesador3 = "Intel core i7 10TH GEN";
+                        int prePro3 = 245000;
+                        String RAM3 = "SODIMM DE 16GB";
+                        int preRAM3 = 39900;
+                        String almacenamiento3 = "SSD DE 240GB";
+                        int preAlm3 = 40000;
+                        String discoduro3 = "1TB";
+                        int preDisc3 = 46900;
+                        int total3 = prePro3 + preRAM3 + preAlm3 + preDisc3;
+                        JOptionPane.showMessageDialog(null, "Esta ultima opcion mas avanzada tiene un costo de; " + total3);
+                        
+                        break;
                         
                         
-                }//fin del switch partes
+                        
+                }//fin del switch armala
                 
                 break; 
         }//fin del swicth opcion
